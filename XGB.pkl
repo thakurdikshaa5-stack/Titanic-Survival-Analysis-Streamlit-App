@@ -1,2 +1,2 @@
 import joblib
-model = joblib.load("XGB.pkl")
+joblib.dump(model, "XGB.pkl")
