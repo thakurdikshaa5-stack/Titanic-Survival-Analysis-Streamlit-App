@@ -5,7 +5,6 @@ import numpy as np
 import joblib
 import plotly.express as px
 
-prediction = model.predict(input_df)
 
 # load the model
 import joblib
@@ -217,9 +216,9 @@ if st.session_state.logged_in:
 
     # ----- Predict Button -----
     if st.button("🔮 Predict"):
-        # Define categorical columns
-        cat_features = ['job', 'marital', 'education', 'default', 'housing', 'loan',
-                        'contact', 'month', 'day_of_week', 'poutcome']
+        prediction = model.predict(input_df)
+        
+        
 
             # Display result
 
