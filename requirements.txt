@@ -3,5 +3,5 @@ pandas
 numpy
 plotly
 xgboost
-joblib
 scikit-learn
+joblib
