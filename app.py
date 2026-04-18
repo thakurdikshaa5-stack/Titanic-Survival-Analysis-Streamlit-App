@@ -4,14 +4,12 @@ import pandas as pd
 import numpy as np
 import joblib
 import plotly.express as px
-import xgboost as xgb
-model1 = xgb.XGBClassifier()
 
-
+prediction = model.predict(input_df)
 
 # load the model
 import joblib
-xgb = joblib.load("XGB.pkl")
+model = joblib.load("XGB.pkl")
 
 
 # Title
